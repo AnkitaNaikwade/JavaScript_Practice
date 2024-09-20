@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <p id = "demo"></p> -->
+    <script>
+        // try {
+        //   alert("Welcome Guest...!")
+        // }catch (error){
+        //  document.getElementById("demo").innerHTML = error
+        // }
+
+        //throw statement
+        // function myfun(){
+        //     var a= 100
+        //     var b = 0
+
+        //     try {
+        //        if(b == 0){
+        //         throw("Divide by zero error")
+        //        } else{
+        //         var c = a/b;
+        //         document.write(c)
+        //        }
+        //     } catch (error) {
+        //       document.write(error)  
+        //     }
+        // }
+        // myfun();
+
+        //try catch finally
+        function myfun(){
+            var a= 100
+            var b = 0
+
+            try {
+               if(b == 0){
+                throw("Divide by zero error")
+               } else{
+                var c = a/b;
+                document.write(c + "<br>")
+               }
+            } catch (error) {
+              document.write(error + "<br>")  
+            }
+        finally{
+            document.write("All Done")
+        }
+    }
+        myfun();
+    </script>
+</body>
+</html>
