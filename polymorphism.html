@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // document.write(10 + 20)
+        // document.write("Hello" + "World")
+
+        class Cat {
+            constructor(name) {
+                this.name = name
+            }
+            display() {
+                document.write("Name of cat is " + this.name);
+            }
+        }
+        const c = new Cat("Kitty")
+        class Dog {
+            constructor(name) {
+                this.name = name
+            }
+            display() {
+                document.write("Name of dog is " + this.name);
+            }
+        }
+        const d = new Dog("Tiger")
+
+        function info(a) {
+            a.display()
+        }
+        info(d)
+    </script>
+</body>
+
+</html>
