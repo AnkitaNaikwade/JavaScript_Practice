@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<!-- //document.appendChild (elements)
+<body>
+    <ul id="menu">
+        <li>Home</li>
+    </ul>
+</body>
+<script>
+    const menu = document.querySelector('#menu')
+    let li = document.createElement('li');
+    li.textContent = 'About Us'
+    menu.appendChild(li)
+    li = document.createElement('li');
+    li.textContent = 'Contact Us'
+    menu.appendChild(li)
+</script> -->
+
+<!-- //document.removeChild (elements)
+<body>
+    <ul id="menu">
+        <li>Home</li>
+        <li>About Us</li>
+        <li>Contact Us</li>
+    </ul>
+    <button onclick="removeElement()">Remove</button>
+    <script>
+        function removeElement(){
+            const list = document.getElementById("menu")
+            // list.removeChild(list.firstElementChild)
+            if(list.hasChildNodes){
+                list.removeChild(list.children[0])
+            }
+        }
+    </script>
+</body> -->
+
+//document replaceChild (new, old)
+<body>
+<ul id="menu">
+    <li>Home</li>
+    <li>About Us</li>
+    <li>Contact Us</li>
+</ul>
+<button onclick="replace()">Replace</button>
+</body>
+<script>
+    function replace(){
+        const element = document.getElementById("menu").children[0]
+        const newnode = document.createTextNode("support")
+        element.replaceChild(newnode, element.childNodes[0])
+    }
+</script>
+</html>
